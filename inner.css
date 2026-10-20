@@ -60,3 +60,54 @@ main{animation:page-arrive .35s ease-in-out}@keyframes page-arrive{from{opacity:
 @media(max-width:1100px) and (min-width:761px){.page-technology .technology-showcase{min-height:400px;padding-left:4%;padding-right:4%}.page-technology .technology-showcase h1{font-size:clamp(39px,4.7vw,52px)}.page-technology .technology-showcase-copy>p:not(.eyebrow){font-size:16px;max-width:405px}}
 @media(max-width:760px){.page-technology .technology-showcase{grid-template-columns:1fr;align-items:start;min-height:585px;padding:35px 25px 245px}.page-technology .technology-showcase::after{background:linear-gradient(180deg,rgba(241,248,250,.99) 0%,rgba(241,248,250,.97) 40%,rgba(241,248,250,.82) 54%,rgba(241,248,250,.1) 79%,rgba(241,248,250,0) 100%)}.page-technology .technology-showcase-visual img{object-position:center 52%}.page-technology .technology-showcase-visual figcaption{right:15px;bottom:13px;font-size:8px;letter-spacing:.9px}.page-technology .technology-showcase h1{font-size:clamp(37px,8.6vw,49px);letter-spacing:-1.9px}.page-technology .technology-showcase-copy>p:not(.eyebrow){font-size:16px;line-height:1.5}}
 @media(max-width:390px){.page-technology .technology-showcase{min-height:565px;padding-left:21px;padding-right:21px;padding-bottom:225px}.page-technology .technology-showcase-visual figcaption{font-size:7px;letter-spacing:.65px}}
+
+/* Projects and Contact use the same seamless banner treatment as the other inner pages. */
+.page-projects .project-showcase,.page-contact .contact-showcase{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,45fr) minmax(0,55fr);align-items:center;gap:0;min-height:455px;padding:58px clamp(34px,5.7vw,78px);overflow:hidden;background:#edf6f8}
+.page-projects .project-showcase::after,.page-contact .contact-showcase::after{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,rgba(241,248,250,.98) 0%,rgba(241,248,250,.94) 28%,rgba(241,248,250,.74) 45%,rgba(241,248,250,.16) 69%,rgba(241,248,250,0) 100%);pointer-events:none}
+.page-projects .project-showcase-visual,.page-contact .contact-showcase-visual{position:absolute;z-index:0;inset:0;margin:0;display:block}
+.page-projects .project-showcase-visual img,.page-contact .contact-showcase-visual img{width:100%;height:100%;max-width:none;object-fit:cover;border-radius:0}
+.page-projects .project-showcase-visual img{object-position:center 57%}
+.page-contact .contact-showcase-visual img{object-position:center 44%}
+.page-projects .project-showcase-visual figcaption,.page-contact .contact-showcase-visual figcaption{position:absolute;right:4.5%;bottom:20px;margin:0;color:#fff;font-size:10px;letter-spacing:1.25px;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,35,30,.7)}
+.page-projects .project-showcase-copy,.page-contact .contact-showcase-copy{position:relative;z-index:2;grid-column:1;max-width:600px}
+.page-projects .project-showcase h1,.page-contact .contact-showcase h1{font-size:clamp(44px,4.7vw,64px);line-height:1.04;letter-spacing:-2.7px;margin-bottom:22px}
+.page-projects .project-showcase-copy>p:not(.eyebrow),.page-contact .contact-showcase-copy>p:not(.eyebrow){max-width:490px;margin-bottom:26px;color:#526a76;font-size:17px;line-height:1.6}
+
+/* Project facts and conditions retain the content while making each point scannable. */
+.page-projects .project-focus{scroll-margin-top:100px}
+.page-projects .project-focus .split-section{align-items:center}
+.page-projects .project-focus h2{font-size:clamp(34px,3.7vw,50px);letter-spacing:-1.8px}
+.page-projects .location-label{display:inline-flex;align-items:center;margin-top:22px;padding:10px 14px;border:1px solid #d8e8df;border-radius:100px;background:#f1f7f2;color:#155543;font-size:11px;font-weight:700;letter-spacing:1.2px}
+.page-projects .project-fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px}
+.page-projects .project-fact{display:flex;gap:18px;min-width:0;padding:25px;border:1px solid #e4ecec;border-radius:20px;background:linear-gradient(135deg,#f8fafb,#f2f7f5);box-shadow:0 9px 25px rgba(8,55,49,.04)}
+.page-projects .project-fact-icon{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:50%;background:#e4f1e9;color:var(--green);font-size:12px;font-weight:700;letter-spacing:.8px}
+.page-projects .project-fact .eyebrow{margin:3px 0 12px;font-size:9px;line-height:1.4}
+.page-projects .project-fact h3{font-size:22px;line-height:1.17;margin-bottom:9px}
+.page-projects .project-fact p:last-child{font-size:13px;line-height:1.55;color:#687587}
+.page-projects .project-milestone{background:linear-gradient(125deg,#f2f8f4,#edf5f8)}
+.page-projects .project-milestone .section-heading>p{justify-self:start;max-width:380px;padding:13px 17px;border:1px solid #dce9df;border-radius:14px;background:#fff;color:#315b53;font-size:14px;line-height:1.5}
+.page-projects .project-milestone>.prose{max-width:990px}
+.page-projects .project-milestone .editorial-grid{margin-top:27px}
+.page-projects .project-milestone .content-card{border-color:#e1ebe6;box-shadow:0 6px 18px rgba(8,55,49,.03)}
+.page-projects .project-milestone .content-card .step-number{margin-bottom:17px}
+.page-projects .project-steps .editorial-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.page-projects .project-steps .content-card{position:relative;padding-top:32px;background:linear-gradient(180deg,#f9fbfa,#f4f7f8)}
+.page-projects .project-steps .step-number{display:grid;place-items:center;width:40px;height:40px;margin-bottom:26px;border-radius:50%;background:#e3f1e9;color:var(--green);font-weight:700}
+.page-projects .project-steps .content-card h3{min-height:48px}
+
+/* Contact details and the enquiry form share the site's pale-card visual language. */
+.page-contact .contact-layout{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:30px;align-items:start}
+.page-contact .contact-details{padding:34px;border:1px solid #e6eeee;border-radius:24px;background:linear-gradient(145deg,#f4f8f8,#f8faf9)}
+.page-contact .contact-details h2{font-size:clamp(31px,3vw,43px);margin-bottom:28px}
+.page-contact .contact-item{margin-top:12px;padding:20px 22px;border:1px solid #e6eeee;border-radius:16px;background:#fff}
+.page-contact .contact-item h3{font-size:15px;margin-bottom:8px}
+.page-contact .contact-item p{font-size:13px;line-height:1.55}
+.page-contact .contact-item a{font-size:14px;margin-bottom:5px}
+.page-contact .enquiry-form{padding:36px;border-color:#e1eae9;border-top:4px solid #0b6852;border-radius:24px;background:#fff;box-shadow:0 18px 42px rgba(5,56,47,.07);scroll-margin-top:100px}
+.page-contact .enquiry-form h2{font-size:clamp(30px,2.8vw,40px)}
+.page-contact .enquiry-form .field input,.page-contact .enquiry-form .field select,.page-contact .enquiry-form .field textarea{border-color:#d7e3e2;background:#fbfcfc}
+.page-contact .enquiry-form .field input:focus,.page-contact .enquiry-form .field select:focus,.page-contact .enquiry-form .field textarea:focus{background:#fff;border-color:#79a99b}
+
+@media(max-width:1100px) and (min-width:761px){.page-projects .project-showcase,.page-contact .contact-showcase{min-height:400px;padding-left:4%;padding-right:4%}.page-projects .project-showcase h1,.page-contact .contact-showcase h1{font-size:clamp(39px,4.7vw,52px)}.page-projects .project-showcase-copy>p:not(.eyebrow),.page-contact .contact-showcase-copy>p:not(.eyebrow){max-width:405px;font-size:16px}.page-projects .project-fact-grid{gap:12px}.page-projects .project-fact{padding:19px;gap:12px}.page-projects .project-fact h3{font-size:18px}.page-projects .project-steps .editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.page-projects .project-showcase,.page-contact .contact-showcase{grid-template-columns:1fr;align-items:start;min-height:600px;padding:35px 25px 250px}.page-projects .project-showcase::after,.page-contact .contact-showcase::after{background:linear-gradient(180deg,rgba(241,248,250,.99) 0%,rgba(241,248,250,.97) 40%,rgba(241,248,250,.8) 57%,rgba(241,248,250,.08) 82%,rgba(241,248,250,0) 100%)}.page-projects .project-showcase-visual img{object-position:60% center}.page-contact .contact-showcase-visual img{object-position:53% center}.page-projects .project-showcase h1,.page-contact .contact-showcase h1{font-size:clamp(37px,8.6vw,49px);letter-spacing:-1.9px}.page-projects .project-showcase-copy>p:not(.eyebrow),.page-contact .contact-showcase-copy>p:not(.eyebrow){font-size:16px;line-height:1.5}.page-projects .project-showcase-visual figcaption,.page-contact .contact-showcase-visual figcaption{right:15px;bottom:13px;font-size:8px;letter-spacing:.9px}.page-projects .project-fact-grid{grid-template-columns:1fr;gap:12px;margin-top:28px}.page-projects .project-fact{padding:22px}.page-projects .project-steps .editorial-grid{grid-template-columns:1fr}.page-projects .project-steps .content-card h3{min-height:0}.page-contact .contact-layout{grid-template-columns:1fr;gap:24px}.page-contact .contact-details{padding:26px}.page-contact .enquiry-form{padding:28px 22px}}
+@media(max-width:390px){.page-projects .project-showcase,.page-contact .contact-showcase{min-height:590px;padding-left:21px;padding-right:21px;padding-bottom:225px}.page-projects .project-showcase-visual figcaption,.page-contact .contact-showcase-visual figcaption{font-size:7px}}
