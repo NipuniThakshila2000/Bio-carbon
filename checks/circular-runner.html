@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Circular QA viewport runner</title></head><body><h1>QA only — not original company content</h1><pre id="results"></pre><iframe id="fixture" title="Synthetic circular interaction fixture" height="1800" style="border:0;display:block"></iframe><script>
+const width=Number(new URLSearchParams(location.search).get('width'))||390;
+const frame=document.querySelector('#fixture');frame.style.width=width+'px';
+frame.addEventListener('load',()=>{
+ let attempts=0;const timer=setInterval(()=>{
+  const result=frame.contentDocument?.querySelector('#results')?.textContent||'';
+  if(result.includes('All circular mechanics checks passed.')||result.includes('FAIL')||++attempts>300){
+   document.querySelector('#results').textContent=result||'FAIL fixture timeout';clearInterval(timer);
+  }
+ },100);
+});
+frame.src='circular.html?test=1';
+</script></body></html>

@@ -1,0 +1,15 @@
+{
+  "origin": "https://bcf-lanka.netlify.app/",
+  "status": "blocked-source-unavailable",
+  "releaseApproved": false,
+  "pages": [
+    {"route": "/", "verified": false, "originalSnapshot": null},
+    {"route": "/about/", "verified": false, "originalSnapshot": null},
+    {"route": "/technology/", "verified": false, "originalSnapshot": null},
+    {"route": "/products/", "verified": false, "originalSnapshot": null},
+    {"route": "/projects/", "verified": false, "originalSnapshot": null},
+    {"route": "/partnerships/", "verified": false, "originalSnapshot": null},
+    {"route": "/contact/", "verified": false, "originalSnapshot": null},
+    {"route": "/privacy/", "verified": false, "originalSnapshot": null}
+  ]
+}

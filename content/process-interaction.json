@@ -1,0 +1,48 @@
+{
+  "mode": "illustrative",
+  "overline": "EXPLORE THE PROCESS",
+  "heading": "From preparation to recovery.",
+  "subtitle": "Explore the five stages of a typical pyrolysis process. The exact plant configuration depends on feedstock and project requirements.",
+  "stages": [
+    {
+      "heading": "Prepare the feedstock",
+      "explanation": "Incoming materials are assessed, sorted, and prepared in a Material Recovery Facility (MRF). Unsuitable or problematic materials are removed before suitable feedstock enters the pyrolysis process. Preparation helps match the material to the conversion process.",
+      "visualBrief": "Prepare the feedstock",
+      "images": [
+        "assets/process/sorting-preparation.png"
+      ]
+    },
+    {
+      "heading": "Feed and heat",
+      "explanation": "Prepared material enters the enclosed reactor through controlled feeding equipment. Heat is applied while limiting oxygen in the conversion zone. Feed rate, sealing, and heating requirements are part of the equipment design.",
+      "visualBrief": "Feed and heat",
+      "images": [
+        "assets/process/shredding.png"
+      ]
+    },
+    {
+      "heading": "Convert the material",
+      "explanation": "Heat breaks down suitable material into vapours, non-condensable gases, and solid residue. Process conditions influence the outputs and their characteristics. The reaction is different from burning the feedstock; plant heating still needs its own controls.",
+      "visualBrief": "Convert the material",
+      "images": [
+        "assets/process/thermal-conversion.png"
+      ]
+    },
+    {
+      "heading": "Cool and condense",
+      "explanation": "Vapours pass through cooling and condensation stages. Condensable fractions are recovered as liquid pyrolysis oil for storage and quality assessment. Fuel quality and suitability must be assessed against the intended industrial application.",
+      "visualBrief": "Cool and condense",
+      "images": [
+        "assets/process/resource-recovery.png"
+      ]
+    },
+    {
+      "heading": "Recover and manage outputs",
+      "explanation": "Non-condensable gas is handled for potential process heating. Char is cooled and collected. Treatment, monitoring, and product testing remain essential. Recovery pathways depend on product quality, local demand, and applicable requirements.",
+      "visualBrief": "Recover and manage outputs",
+      "images": [
+        "assets/process/recovered-outputs.png"
+      ]
+    }
+  ]
+}

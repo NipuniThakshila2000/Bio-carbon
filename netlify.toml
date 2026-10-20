@@ -1,0 +1,19 @@
+[build]
+  publish = "."
+
+# Pages are prebuilt static HTML. Netlify serves /about from /about/index.html.
+# Do not add a catch-all SPA rewrite: unknown URLs should remain real 404s.
+[build.processing]
+  skip_processing = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

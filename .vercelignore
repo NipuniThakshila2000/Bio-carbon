@@ -1,0 +1,13 @@
+checks/
+content-audit/
+content/
+pages/
+partials/
+LOGO/
+*.ps1
+README.md
+netlify.toml
+*.psd
+Screenshot*.png
+BCF LANKA Circular Technology Homepage.png
+download.png

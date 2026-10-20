@@ -1,0 +1,11 @@
+# Temporary output from local browser verification.
+chrome-profile/
+chrome-qa-profile/
+chrome-*/
+*console.log
+*-dom.html
+chrome-*.log
+chrome-*-dom.html
+chrome-dom.html
+*-file.png
+process-build-fixture/

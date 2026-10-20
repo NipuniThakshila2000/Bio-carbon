@@ -1,0 +1,16 @@
+# Local browser test profiles and generated check output
+checks/chrome-*/
+checks/*.log
+checks/*.png
+checks/*-dom.html
+checks/*-results.txt
+
+# Local deployment state
+.vercel/
+.env*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.tmp
